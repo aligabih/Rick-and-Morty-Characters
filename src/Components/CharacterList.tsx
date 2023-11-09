@@ -28,6 +28,7 @@ interface CharacterListProps {
 
 const CharacterList: FC<CharacterListProps> = ({ episodeId }) => {
   const [characters, setCharacters] = useState<Character[]>([]);
+  const [episodeName, setEpisodeName] = useState<string | null>(null);
 
   useEffect(() => {
     if (episodeId !== null) {
@@ -46,6 +47,7 @@ const CharacterList: FC<CharacterListProps> = ({ episodeId }) => {
             )
             .then((charactersResponse) => {
               setCharacters(charactersResponse.data);
+              setEpisodeName(response.data.name);
             })
             .catch((charactersError) =>
               console.error("Error fetching characters:", charactersError)
@@ -61,10 +63,16 @@ const CharacterList: FC<CharacterListProps> = ({ episodeId }) => {
     <div className="character-list">
       <div className="title">Rick and Morty Characters</div>
       <h2>Characters</h2>
+      <div className="character-total">
+        {characters.length > 0 && episodeName && (
+          <>
+            There are {characters.length} characters in episode "{episodeName}"
+          </>
+        )}
+      </div>
       <div className="characters-container">
         {characters.map((character) => (
           <div key={character.id} className="character-box">
-            {/* Link to the character's detail page */}
             <Link to={`/characters/${character.id}`}>
               <img src={character.image} alt={character.name} />
               <p>{character.name}</p>

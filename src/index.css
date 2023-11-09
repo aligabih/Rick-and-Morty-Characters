@@ -23,11 +23,9 @@ a:hover {
   text-decoration: underline;
 }
 
-@media (max-width: 600px) {
-  .react-app,
-  .episode-list,
-  .character-list {
-    padding: 10px;
+@media (max-width: 768px) {
+  .character-box {
+    width: calc(40% - 10px);
   }
 }
 
@@ -51,37 +49,14 @@ a:hover {
   flex: 1;
   padding: 20px;
 }
-/*
-.episode-boxes {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 10px;
-}
-
-.episode-box {
-  background-color: #ffcc29;
-  color: #333;
-  padding: 10px;
-  border-radius: 8px;
-  margin-right: 10px;
-  margin-bottom: 10px;
-  text-decoration: none;
-  transition: background-color 0.3s, color 0.3s;
-}
-
-.episode-box a {
-  color: #333;
-}
-
-.episode-box a:hover {
-  text-decoration: underline;
-}
 
 .episode-list {
   background-color: #00838f;
   border-radius: 8px;
   padding: 15px;
   margin-bottom: 20px;
+  overflow-y: auto;
+  max-height: 400px;
 }
 
 .episode-list h2 {
@@ -90,41 +65,7 @@ a:hover {
 
 .episode-list ul {
   padding: 0;
-}
-
-.episode-list li {
-  cursor: pointer;
-  padding: 10px;
-  margin-bottom: 8px;
-  border-radius: 6px;
-  transition: background-color 0.3s;
-}
-
-.episode-list li:hover {
-  background-color: #005662;
-}
-
-.episode-list .selected {
-  background-color: #d84315;
-  color: #fff;
-} */
-
-.episode-list {
-  background-color: #00838f;
-  border-radius: 8px;
-  padding: 15px;
-  margin-bottom: 20px;
-  overflow-y: auto; /* Enable vertical scrolling */
-  max-height: 400px; /* Set a fixed height for the list container */
-}
-
-.episode-list h2 {
-  color: #fff;
-}
-
-.episode-list ul {
-  padding: 0;
-  margin: 0; /* Remove default margin to avoid unwanted space */
+  margin: 0;
 }
 
 .episode-list li {
@@ -151,15 +92,15 @@ a:hover {
 .characters-container {
   display: flex;
   flex-wrap: wrap;
-  gap: 20px;
-  justify-content: space-between;
+  gap: 10px;
 }
 
 .character-box {
   background-color: #7cb342;
   border-radius: 8px;
   padding: 10px;
-  flex: 0 1 23%;
+  width: calc(20% - 10px);
+  margin-bottom: 10px;
 }
 
 .character-box img {
