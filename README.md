@@ -1,70 +1,70 @@
-# Getting Started with Create React App
+# Rick and Morty Image Feed
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This project is a dynamic image feed using the Rick and Morty API. It allows you to explore characters based on selected episodes.
 
-## Available Scripts
+## Project Overview
 
-In the project directory, you can run:
+The application provides an interactive interface to explore characters from different episodes of the popular TV show Rick and Morty.
 
-### `npm start`
+## Features
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- **Episode List**: On the initial page load, a list of episodes is displayed in the left sidebar. Each episode is clickable.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+- **Character Display**: The main view shows the first page of characters based on the selected episode.
 
-### `npm test`
+- **Episode Highlight**: When an episode is selected, it is highlighted in the left sidebar.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- **Dynamic Updates**: Changing the selected episode dynamically updates the main view with characters from the newly selected episode.
 
-### `npm run build`
+## How to Use
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+1. **Clone Repository**: Clone this repository to your local machine.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+   ```bash
+   git clone <repository-url>
+   ```
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+2. **Navigate to Project Directory**: Change into the project directory.
 
-### `npm run eject`
+   ```bash
+   cd rick-and-morty-image-feed
+   ```
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+3. **Install Dependencies**: Run the following command to install project dependencies.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+   ```bash
+   npm install
+   ```
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+4. **Run the App**: Start the development server and open the app in your default browser.
+   ```bash
+   npm start
+   ```
+   Open [http://localhost:3000](http://localhost:3000) to view the app.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+## Additional Scripts
 
-## Learn More
+- **Run Tests**: Launch the test runner in interactive watch mode.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+  ```bash
+  npm test
+  ```
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+- **Build for Production**: Build the app for production to the `build` folder.
+  ```bash
+  npm run build
+  ```
 
-### Code Splitting
+## Technologies Used
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+- Next.js
+- React.js
+- Typescript
 
-### Analyzing the Bundle Size
+## Acknowledgements
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+This project was created by Hussein Aligabi for a developer position assessment.
 
-### Making a Progressive Web App
+Happy exploring the Rick and Morty universe!
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Feel free to adjust it further based on your preferences and specific details about the project.
