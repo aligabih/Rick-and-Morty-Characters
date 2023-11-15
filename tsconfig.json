@@ -11,6 +11,12 @@
     "noImplicitAny": true,
     "strict": true
   },
-  "include": ["src/**/*.ts", "src/**/*.tsx", "src/App.js"],
+  "include": [
+    "src/**/*.ts",
+    "src/**/*.tsx",
+    "src/App.tsx",
+    "src/index.js",
+    "src/index.js"
+  ],
   "exclude": ["node_modules"]
 }

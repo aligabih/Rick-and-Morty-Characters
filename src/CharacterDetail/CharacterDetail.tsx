@@ -1,5 +1,5 @@
 import React, { FC, useEffect, useState } from "react";
-import { useParams } from "react-router-dom";
+import { useParams, Link } from "react-router-dom";
 import axios from "axios";
 
 interface CharacterDetailProps {}
@@ -78,15 +78,9 @@ const CharacterDetail: FC<CharacterDetailProps> = () => {
         <div className="episodes-list">
           {character.episode.map((episode) => (
             <div key={episode} className="episode-item">
-              <a
-                href={`https://rickandmortyapi.com/api/episode/${episode
-                  .split("/")
-                  .pop()}`}
-                target="_blank"
-                rel="noopener noreferrer"
-              >
+              <Link to={`/episode/${episode.split("/").pop()}`}>
                 {`Episode ${episode.split("/").pop()}`}
-              </a>
+              </Link>
             </div>
           ))}
         </div>

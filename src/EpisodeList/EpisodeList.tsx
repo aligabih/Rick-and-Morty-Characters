@@ -20,7 +20,7 @@ const EpisodeList: FC<EpisodeListProps & { episodes: Episode[] }> = ({
 
   const handleEpisodeClick = (episodeId: number) => {
     onEpisodeSelect(episodeId);
-    navigate(`/episodes/${episodeId}`); // Update the route to /episodes/:id
+    navigate(`/episodes/${episodeId}`);
   };
 
   return (
